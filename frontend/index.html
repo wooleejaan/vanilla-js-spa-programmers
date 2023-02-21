@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Page Application</title>
+  <link rel="stylesheet" href="static/css/index.css">
+  <style>
+    html,
+    body,
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    } 
+
+    body {
+      background-color: #eee;
+      height: 100vh;
+    }
+
+    .app {
+      width: 100%;
+      height: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+    .app ul li {
+      list-style: none;
+    }
+
+    .ProductListPage ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .Product {
+      width: 150px;
+      padding: 16px;
+      border-radius: 5px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      margin: 8px;
+    }
+    .Product img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+    }
+    .Product .Product__info {
+      margin-top: 6px;
+    }
+
+    .ProductDetail {
+      display: flex;
+      flex-direction: row;
+      background-color: #fff;
+      padding: 24px;
+      border: 1px solid #ccc;
+    }
+    .ProductDetail img {
+      width: 300px;
+    }
+    .ProductDetail .ProductDetail__info {
+      border: 1px solid #ccc;
+      flex: 1;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+    }
+    .ProductDetail__price {
+      text-align: right;
+      font-size: 1.5rem;
+    }
+    .ProductDetail__info select {
+      margin-top: 40px;
+      width: 100%;
+      font-size: 20px;
+      border: 1px solid #ccc;
+    }
+    .ProductDetail__selectedOptions {
+      border: 1px solid #ccc;
+      margin-top: 100px;
+      margin-bottom: 16px;
+      padding: 16px;
+    }
+
+    .ProductDetail__selectedOptions h3 {
+      margin-top: 0;
+    }
+
+    .ProductDetail__selectedOptions input {
+      width: 50px;
+    }
+
+    .ProductDetail__selectedOptions li {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .ProductDetail ul {
+      margin-bottom: 16px;
+    }
+
+    .OrderButton {
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 8px;
+      background-color: #1890ff;
+      color: #fff;
+      font-size: 1.2rem;
+      border: 1px solid #40a9ff;
+      padding: 10px;
+    }
+
+    .OrderButton:hover {
+      cursor: pointer;
+      background-color: #0050b3;
+    }
+
+    .ProductDetail__totalPrice {
+      font-size: 2rem;
+      text-align: right;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main class="app"></main>
+  <script type="module" src="/static/js/index.js"></script>
+</body>
+</html>
